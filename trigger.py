@@ -17,9 +17,10 @@ def usage():
     sys.exit(2)
 
 # process command line
-options, remainder = getopt.getopt(sys.argv[1:], 'f:r:e:d:', ['re=', 'regexp=',
-                                                              'e=', 'exec', 'debug=',
-                                                              'f=', 'file='])
+options, remainder = getopt.getopt(sys.argv[1:], 'f:r:e:d:',
+                                   ['re=', 'regexp=',
+                                    'e=', 'exec', 'debug=',
+                                    'f=', 'file='])
 regexp_string = ''
 exec_string = ''
 file_string = ''
