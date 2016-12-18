@@ -7,8 +7,8 @@
 #
 import os, sys
 import re
-import pyinotify as inotify
-import logging
+import pyinotify as inotify	# receive notify on file change
+import logging			#
 import getopt
 
 def usage():
@@ -37,6 +37,7 @@ for opt, arg in options:
     elif opt in ('-d', '--d', '--debug'):
         debug_string = arg
 
+# need a regular expression and a string - and something to run!
 if not regexp_string or not exec_string or not file_string:
     usage()
 
@@ -114,4 +115,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
