@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Trigger --re "regular expression" --exec "command_line %s"
+# Trigger --file "<file>" --re "regular expression" --exec "command_line %s"
 #
 # Watch a file, when lines are added to it that match <regular expression>,
 # start "command" with the file line as an argument.
